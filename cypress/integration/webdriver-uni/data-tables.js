@@ -14,7 +14,7 @@ describe("Handling data via webdriveruni", () => {
         
         // get all td, then add all age using Number()
         // Number() returns no numeric value if data is not number
-        cy.get('#thumbnail-1 td555').each(($el, index, $list) => {
+        cy.get('#thumbnail-1 td').each(($el, index, $list) => {
             userDetails[index] = $el.text();
         }).then(() => {
             var i;
